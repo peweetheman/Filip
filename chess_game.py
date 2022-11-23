@@ -1,5 +1,3 @@
-import string
-
 
 class board():
     def __init__(self):
@@ -42,6 +40,7 @@ class board():
                 for j in range(init_pos_col, final_pos_col):    # check for blockers
                     if self.board_state[i][j] != " ":
                         return False
+        # continue writing out the legal moves for all pieces
 
 my_board = board()
 my_board.print_board()
